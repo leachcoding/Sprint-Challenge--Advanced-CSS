@@ -2,34 +2,67 @@
 
 .home {
 
+// HEADER SECTION
   .intro {
+
+    img {
+      .width-mixin();
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
+      @media @phone {
+        margin-top: 5px;
+      }
     }
 
     p {
       padding:0 15px;
+      @media @phone {
+        padding: 0px 0px 0px 15px;
+      }
     }
-  
+
   }
 
+// IMAGES BLAST/SKY/LAUNCH
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .width-mixin();
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        .width-mixin();
+        margin-left: 25px;
+      }
     }
   }
 
+// VISIT PLANET SECTION
   .visit-planets {
     padding: 15px;
-
+    @media @phone {
+      margin-top: 5px;
+      padding: 15px 0px 15px 15px;
+    }
     h3 {
       margin-top: 11px;
     }
@@ -37,39 +70,128 @@
     p {
       margin-top: 13px;
     }
+    p:last-child {
+      @media @phone {
+        margin-bottom: 20px;
+      }
+    }
   }
 
+// WALK SECTION
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        .width-mixin();
+      }
 
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          margin-top: 20px;
+          margin-left: 22px;
+        }
       }
 
       p {
         margin-bottom: 26px;
+        @media @phone {
+          margin-left: 22px;
+        }
       }
 
       .btn {
+        margin-left: -1px;
+        margin-top: -3px;
+        @media @phone {
+          margin-left: 20px;
+        }
+        button {
+          .button-mixin(@btn-bg-color, 30%, 38px, 7px, white, 1.80rem);
+          transition: 0.3s;
+          @media @phone {
+            .button-mixin(@btn-bg-color, 99%, 75px, 7px, white, 1.80rem);
+            }
+        }
+        button:hover {
+          .button-mixin(white, 30%, 38px, 7px, @btn-bg-color, 1.80rem);
+          @media @phone {
+            .button-mixin(white, 99%, 75px, 7px, @btn-bg-color, 1.80rem);
+            }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        order: -1;
+        width: 95%;
+        margin-top: 20px;
+      }
+
       img {
-        width: 100%;
+        .width-mixin();
         height: auto;
         border-radius: 10px;
+        @media @phone {
+          .width-mixin();
+        }
       }
     }
   }
+
+// MAGAZINE SUBSCRIPTION
+  .magazine-subscription {
+    border-top: 1px solid @main-border-color;
+    text-align: center;
+    margin-bottom: 20px;
+    @media @phone {
+      margin-left: 23px;
+    }
+    h2 {
+      margin-top: 60px;
+    }
+    p {
+      margin: 10px 40px 10px 40px;
+    }
+    form {
+      text-align: center;
+      input {
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        @media @phone {
+          text-align: center;
+          font-size: 1.45rem;
+        }
+      }
+      textarea {
+        width: 50%;
+        border-radius: 10px;
+        @media @phone {
+          text-align: center;
+          font-size: 1.45rem;
+        }
+      }
+      input[type="submit"] {
+        background-color: @btn-bg-color;
+        color: white;
+        font-size: 1.73rem;
+      }
+    }
+  }
+
 }// home

@@ -6,6 +6,7 @@
 
   <title>SpaceWalkers</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
@@ -16,51 +17,106 @@
 
 <body>
 
- <!-- navigation code here -->
+ <!-- NAVIGATION SECTION -->
+  <section class="navigation">
+    <nav>
+      <h2 class="title-nav">SpaceWalkers</h2>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="" class="home-nav">Home</a></li>
+        <li class="nav-item"><a href="" class="about-nav">About Us</a></li>
+        <li class="nav-item"><a href="" class="blog-nav">Blog</a></li>
+        <li class="nav-item"><a href="" class="contact-nav">Contact</a></li>
+        <li class="nav-item"><a href="" class="signin-nav">Sign In</a></li>
+      </ul>
+    </nav>
+  </section>
 
   <div class="container home">
 
+    <!-- HEADER SECTION -->
+
     <header class="intro">
        <!-- image code here -->
+       <img src="img/main-header.png" alt="Earth">
 
       <h2>Lift Off</h2>
-    
+
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
     </header>
+
+    <!-- IMAGES BLAST/SKY/LAUNCH -->
 
     <section class="space-images">
         <img src="img/blast.png" class="blast" alt="Rocket blasting off">
         <img src="img/sky.png" class="sky" alt="Space sky image">
         <img src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
-   
+
+    <!-- VISIT PLANETS SECTION -->
+
     <section class="visit-planets">
-     
+
       <h3>Can We Visit Planets?</h3>
-    
+
       <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
+
       <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
     </section>
-    
+
+    <!-- WALK SECTION -->
+
     <section class="walk">
       <div class="walk-text">
         <h3>Let's Go For A Walk</h3>
 
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-      
+
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
+
         <div class="btn">
-          Sign Up
+          <button>Sign Up</button>
         </div>
       </div>
-      
+
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
     </section>
+
+    <!-- STRETCH GOAL FORM -->
+
+  <section class="magazine-subscription">
+    <h2>Spacewalkers Magazine: Subscribe Today!</h2>
+
+    <!-- SPACE IPSUM TEXT -->
+    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>
+    <form action="/action_page.php">
+      <p>Name: </p>
+      <input type="text" name="name" placeholder=" Input Name Please:" value="">
+      <br>
+      <br>
+      <p>Email: </p>
+      <input type="text" name="email"
+      placeholder=" Input Email Please:" value="">
+      <br>
+      <br>
+      <p>Phone Number: </p>
+      <input type="text" name="number"
+      placeholder=" Input Number Please:" value="">
+      <br>
+      <br>
+      <p>Comments / Concerns: </p>
+      <textarea type="text" name="comments"
+        placeholder=" Any Comments or Concerns?"
+       value=""></textarea>
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+    <!-- FOOTER SECTION -->
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>

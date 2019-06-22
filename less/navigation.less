@@ -1,1 +1,40 @@
-// Navigation code here
+// NAVIGATION SECTION
+.navigation {
+  .width-mixin();
+  background-color: @nav-bg;
+  font: @nav-font;
+  nav {
+    .nav-flex-mixin();
+    padding: 14px 0px 13px 0px;
+    .title-nav {
+      font-size: 4rem;
+      @media @phone {
+        margin-left: 20px;
+        margin-top: -3px;
+      }
+    }
+    .nav-links {
+      display: flex;
+      font-size: 1.56rem;
+      margin-top: 19px;
+      margin-right: 35px;
+      @media @phone {
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-top: 20px;
+      }
+      .nav-item {
+        a {
+          text-decoration: none;
+          color: @nav-font;
+          padding-left: 32px;
+          transition: 0.3s;
+        }
+        a:last-child {
+          margin-left: 2px;
+        }
+
+      }
+    }
+  }
+}
