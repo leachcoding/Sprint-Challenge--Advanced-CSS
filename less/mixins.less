@@ -1,1 +1,21 @@
 // Mixins Here
+
+.nav-flex-mixin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.width-mixin {
+  width: 100%;
+}
+
+.button-mixin(@btn-bg-color, @width, @height, @border-radius, @font-color, @font-rem) {
+  background-color: @btn-bg-color;
+  width: @width;
+  height: @height;
+  border-radius: @border-radius;
+  color: @font-color;
+  font-size: @font-rem;
+}

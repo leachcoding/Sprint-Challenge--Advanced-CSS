@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will typically use hard coded pixels using media queries. They are quicker to make than a responsive website. A responsive site will have media queries that are used to constrain responsive units so that the viewport will achieve an experience than functions beautifully across all devices. Responsive sites will typically have % based layouts and max-widths.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is the idea that the design of the site will be coded 'mobile' first, and then expanding the features and layouts as the screen size moves more towards a desktop size. Desktop first is the reverse, where the site is designed on a desktop layout first, and then features and layouts are shrunk and condensed as the screen size moves more towards a mobile size.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Because the default size of the browser is 16px, font-size: 62.5% is equivalent to 10px. This means that when we use rem, we can reference it as such:
+
+1rem = 10px
+1.5rem = 15px
+2rem = 20px
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Just a simpler, more organized syntax for CSS, that is written in a different language. LESS for example features more expansive options than just traditional CSS, including variables, parametric mixins, etc.
+
+Syntax (LESS) -> Compiler (JavaScript) -> CSS
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+
+I really love the power of LESS. Mixins change the entire game for me in terms of quickness, ease of code, and how easy they make things. Parametric mixins aren't really giving me 'trouble' persay, but it's like a kid who just got 30 toys. At times, you're so overwhelmed will all of the options just presented to you, that it's hard to choose a single thing. That's parametric mixins for me. They are so powerful, at times it can be overwhelming to wield that. They make things so much more simpler and easier to code.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +74,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
